@@ -1,0 +1,14 @@
+.monito {
+  height: 70vb;
+  width: 70vb;
+  
+}
+.pink {
+  fill: #e50ad5;
+  transition: 10s;
+}
+.pink:hover {
+  fill: #F9128F;
+  transition: 0.2s;
+
+}
