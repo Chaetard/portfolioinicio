@@ -12,7 +12,7 @@ label{
 }
 span {
   transition: 0.3s;
-  
+  font-size: 1.1rem;
 }
 .nombrej{
   margin-left: 60px;
@@ -69,4 +69,16 @@ position: absolute;
       stroke-dashoffset: 0;
     }
   }
+
+.descargar{
+  text-decoration: none;
+  background-color: white;
+  color: black; 
+}
+.desci{
+  background-color: white;
+  float: right;
+  transition: 0.3s;
+}
+
 

@@ -4,7 +4,7 @@ import './mainport.css'
 function Mainport() {
   return (
     <div>
-      <svg className="monito"
+      <svg className="monito img-fluid animate__animated animate__fadeInUp"
         xmlns="http://www.w3.org/2000/svg"
        
         width="850.53801"

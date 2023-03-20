@@ -6,80 +6,43 @@ function Maintext() {
 
   useEffect(() => {
     const textos = [
-      { texto: "Jesus" },
-      { texto: "Jesu" },
-      { texto: "Jes" },
-      { texto: "Je" },
-      { texto: "J" },
-      { texto: "" },
-      { texto: "S" },
-      { texto: "Sa" },
-      { texto: "San" },
-      { texto: "Sant" },
-      { texto: "Santo" },
-      { texto: "Santos" },
-      { texto: "Santos" },
-      { texto: "Santo" },
-      { texto: "Sant" },
-      { texto: "San" },
-      { texto: "Sa" },
-      { texto: "S" },
-      { texto: "" },
-      { texto: "J" },
-      { texto: "Je" },
-      { texto: "Jes" },
-      { texto: "Jesu" },
-      { texto: "Jesus" },
-      { texto: "Jesus S" },
-      { texto: "Jesus Sa" },
-      { texto: "Jesus San" },
-      { texto: "Jesus Sant" },
-      { texto: "Jesus Santo" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santos" },
-      { texto: "Jesus Santo" },
-      { texto: "Jesus Sant" },
-      { texto: "Jesus San" },
-      { texto: "Jesus Sa" },
-      { texto: "Jesus S" },
-      { texto: "Jesus" },
-      { texto: "Jesu" },
-      { texto: "Jes" },
-      { texto: "Je" },
-      { texto: "J" },
-      { texto: "" },
-      { texto: "J" },
-      { texto: "Je" },
-      { texto: "Jes" },
-      { texto: "Jesu" },
-      { texto: "Jesus" },
+      //SOME HERE ?? OR NOT
+      { texto: "¡Hola!", color: "#8f025d" },
+      { texto: "¡Hola!", color: "#670381" },
+      { texto: "¡Hola!", color: "#3a05ab" },
+      { texto: "¡Hola!", color: "#550492" },
+      { texto: "¡Hola!", color: "#880263" },
+      { texto: "¡Hola!", color: "#E50AD5" },
+      //SOME HERE
     ];
     let contador = 0;
 
     const intervalId = setInterval(() => {
       setTexto(
-        <span style={{ color: textos[contador].color }}>
+        <p
+          href="https://www.youtube.com/watch?v=wDgQdr8ZkTw"
+          target="_blank"
+          style={{
+            color: textos[contador].color,
+            textDecoration: "none",
+            transition: "1s",
+          }}
+        >
           {textos[contador].texto}
-        </span>
+        </p>
       );
       contador++;
       if (contador >= textos.length) {
         contador = 0;
       }
-    }, 450);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <p id="texto-cambiante" className="textc">
-      {texto}
+    <p id="texto-cambiante" className="textc ">
+      {texto ? texto : "¡Hola!"}
     </p>
   );
 }
