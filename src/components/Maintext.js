@@ -41,7 +41,7 @@ function Maintext() {
   }, []);
 
   return (
-    <p id="texto-cambiante" className="textc ">
+    <p id="texto-cambiante" className="textc animate__animated animate__fadeInUp">
       {texto ? texto : "¡Hola!"}
     </p>
   );

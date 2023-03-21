@@ -11,8 +11,10 @@ label{
   color: white;
 }
 span {
+  padding-top: 3px;
   transition: 0.3s;
-  font-size: 1.1rem;
+  font-size: 1.2vw;
+  margin-left: 20px;
 }
 .nombrej{
   margin-left: 60px;
@@ -39,8 +41,7 @@ span:hover {
 }
 .slashmen{
 position: absolute;
-  height: 30px;
-  width: 30px;
+  
   margin-right: 5px;
   fill: rgb(105, 0, 79);
   transition: 0.3s;
@@ -48,12 +49,12 @@ position: absolute;
  
 }
 .slashmen:hover {
-  height: 50px;
-  width: 50px;
+ 
   transition: 0.3s;
   margin-right: 7px;
   margin-right: 40px;
-  
+  height: 50px;
+  width: 50px;
 }
 .slashmen:hover {
     stroke:white;
@@ -81,4 +82,18 @@ position: absolute;
   transition: 0.3s;
 }
 
+#basic-nav-dropdown{
+  font-size: .90vw !important;
+ 
+}
 
+@media screen and (max-width: 600px) {
+  span{
+    font-size: 16px;
+    margin-left: 0px;
+    padding: none;
+  }
+  #basic-nav-dropdown{
+    font-size: 10px !important;
+  }
+}
