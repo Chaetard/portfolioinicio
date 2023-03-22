@@ -72,9 +72,7 @@ background: radial-gradient(circle, rgba(18,7,208,1) 0%, rgba(179,2,149,1) 68%, 
 
  fill: white;
 }
-.htmlv{
-  transition: 0.02s !important;
-}
+
 .cssi{
   fill: white ;
 transition: 0.10;
@@ -84,4 +82,49 @@ transition: 0.10;
 }
 .textog{
   margin-left: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .textoD{
+    font-size: 16px;
+    margin-left: 0px;
+    padding: none;
+  }
+  .textoD{
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills{
+    font-size: 20px;
+    margin-left: 0px;
+    padding: none;
+    
+  }
+  .skills{
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icons1{
+   height: 2em;
+   width: 2em;
+    
+  }
+  .icons1{
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .w3-grey{
+  
+    height: 15px !important;
+    
+  }
+  .w3-grey{
+    height: 15px !important;
+    font-size: 8px;
+  }
 }
